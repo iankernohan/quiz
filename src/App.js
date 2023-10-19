@@ -8,21 +8,27 @@ import { useState } from "react";
 
 function App() {
   const [isQuiz, setIsQuiz] = useState('');
-  const [hoverQuiz, setHoverQuiz] = useState(false);
+  const [selectedQuiz, setSelectedQuiz] = useState('');
 
   const quiz = quizes[isQuiz]
 
-  function handleQuizHover(value) {
-    setHoverQuiz(value);
+  function handleQuizSelect(quizName) {
+    quizName === selectedQuiz ? setSelectedQuiz('') : setSelectedQuiz(quizName);
+    console.log(quizes[quizName])
   }
+
+  function handleSetQuiz(quiz) {
+    setIsQuiz(quiz);
+  }
+
 
   return (
     <div className="page">
       <Header >Quisp</Header>
       {!isQuiz ?
         <>
-          <QuizList quizes={quizes} handleQuizSelect={name => setIsQuiz(name)} onQuizHover={handleQuizHover} />
-          {hoverQuiz && <Preview />}
+          <QuizList quizes={quizes} handleQuizSelect={handleQuizSelect} selectedQuiz={selectedQuiz} />
+          <Preview selectedQuiz={quizes[selectedQuiz]} quizName={selectedQuiz} handleSetQuiz={handleSetQuiz} />
         </>
         :
         <Quiz title={quiz.name} questions={quiz.questions} setIsQuiz={setIsQuiz} />}

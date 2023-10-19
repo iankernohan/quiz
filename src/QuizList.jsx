@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function QuizList({ quizes, handleQuizSelect, onQuizHover }) {
+export default function QuizList({ quizes, handleQuizSelect, selectedQuiz }) {
   const [isAtBottom, setIsAtBottom] = useState(false);
 
   function handleScroll(e) {
@@ -19,8 +19,11 @@ export default function QuizList({ quizes, handleQuizSelect, onQuizHover }) {
               className="quizCard"
               key={i}
               onClick={() => handleQuizSelect(quizName)}
-              onMouseOver={() => onQuizHover(true)}
-              onMouseLeave={() => onQuizHover(false)}
+              style={
+                selectedQuiz === quizName
+                  ? { backgroundColor: "rgb(93, 204, 255)" }
+                  : {}
+              }
             >
               <div style={{ fontSize: "1.7rem" }}>{quizes[quizName].name}</div>
               <div style={{ fontSize: "1.2rem" }}>
