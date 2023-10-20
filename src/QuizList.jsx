@@ -11,7 +11,6 @@ export default function QuizList({ quizes, handleQuizSelect, selectedQuiz }) {
 
   return (
     <div className="quizList">
-      <h2>Quiz List</h2>
       <div className="quizSelect" onScroll={handleScroll}>
         {Object.keys(quizes).map((quizName, i) => {
           return (
@@ -20,9 +19,7 @@ export default function QuizList({ quizes, handleQuizSelect, selectedQuiz }) {
               key={i}
               onClick={() => handleQuizSelect(quizName)}
               style={
-                selectedQuiz === quizName
-                  ? { backgroundColor: "rgb(93, 204, 255)" }
-                  : {}
+                selectedQuiz === quizName ? { backgroundColor: "#80b3ff" } : {}
               }
             >
               <div style={{ fontSize: "1.7rem" }}>{quizes[quizName].name}</div>

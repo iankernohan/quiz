@@ -19,7 +19,7 @@ export default function QuestionBox({
               onClick={updateAnswer}
               style={
                 ans === answer[questionNum]
-                  ? { backgroundColor: "rgb(135, 214, 148)" }
+                  ? { backgroundColor: "#062c30", color: "white" }
                   : {}
               }
               key={i}
