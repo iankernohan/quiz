@@ -1,7 +1,6 @@
 export default function QuestionBox({
   questions,
   questionNum,
-  letters,
   answer,
   updateAnswer,
 }) {
@@ -10,8 +9,10 @@ export default function QuestionBox({
   return (
     <>
       <div className="questionBox">
-        <h4 className="questionNum">Question {questionNum + 1}</h4>
-        <h1 className="question">{question.question}</h1>
+        <div className="questionBoxHeader">
+          <h2 className="question">{question.question}</h2>
+          <h4 className="questionNum">Question {questionNum + 1}</h4>
+        </div>
         <div className="answers">
           {question.answers.map((ans, i) => (
             <div
@@ -19,13 +20,16 @@ export default function QuestionBox({
               onClick={updateAnswer}
               style={
                 ans === answer[questionNum]
-                  ? { backgroundColor: "#062c30", color: "white" }
+                  ? {
+                      backgroundColor: "#cf6766",
+                      color: "white",
+                      paddingLeft: "3rem",
+                    }
                   : {}
               }
               key={i}
               value={ans}
             >
-              <div className="letter">{letters[i]}.</div>
               <div>{ans}</div>
             </div>
           ))}

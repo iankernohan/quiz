@@ -1,0 +1,254 @@
+{
+  "quizes": [
+    {
+      "id": 1,
+      "name": "Math Quiz",
+      "questions": [
+        {
+          "question": "What is 3 x 4?",
+          "answers": [
+            "34",
+            "12",
+            "7",
+            "1"
+          ],
+          "correctAnswer": "12"
+        },
+        {
+          "question": "What is 5 x 0?",
+          "answers": [
+            "0",
+            "12",
+            "7",
+            "1"
+          ],
+          "correctAnswer": "0"
+        },
+        {
+          "question": "What is 8 x 3?",
+          "answers": [
+            "34",
+            "12",
+            "24",
+            "1"
+          ],
+          "correctAnswer": "24"
+        },
+        {
+          "question": "What is 10 x 100?",
+          "answers": [
+            "34",
+            "1000",
+            "7",
+            "1"
+          ],
+          "correctAnswer": "1000"
+        },
+        {
+          "question": "What is 6 x 7?",
+          "answers": [
+            "34",
+            "12",
+            "7",
+            "42"
+          ],
+          "correctAnswer": "42"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Geography Quiz",
+      "questions": [
+        {
+          "question": "How many GreatLakes does Michigan have?",
+          "answers": [
+            "5",
+            "12",
+            "7",
+            "1"
+          ],
+          "correctAnswer": "5"
+        },
+        {
+          "question": "What continent does Argentina belong to?",
+          "answers": [
+            "South America",
+            "North America",
+            "Europe",
+            "Asia"
+          ],
+          "correctAnswer": "South America"
+        },
+        {
+          "question": "What ocean is the largest?",
+          "answers": [
+            "Atlantic",
+            "Indian",
+            "Arctic",
+            "Pacific"
+          ],
+          "correctAnswer": "Pacific"
+        },
+        {
+          "question": "What is the name of the most previous Super Continent?",
+          "answers": [
+            "Big Land",
+            "Ontana",
+            "Pangea",
+            "Earth"
+          ],
+          "correctAnswer": "Pangea"
+        },
+        {
+          "question": "What is the name of the country Egypt?",
+          "answers": [
+            "Egypt",
+            "Not Egypt",
+            "It has no name",
+            "What is Egypt?"
+          ],
+          "correctAnswer": "Egypt"
+        }
+      ]
+    },
+    {
+      "id": 630069968,
+      "name": "React",
+      "questions": [
+        {
+          "question": "What are the building blocks of React?",
+          "answers": [
+            "Elements",
+            "Components",
+            "Trees",
+            "Blocks"
+          ],
+          "correctAnswer": "Components"
+        },
+        {
+          "question": "Who invented React?",
+          "answers": [
+            "Google",
+            "Chrome",
+            "Ian",
+            "Facebook"
+          ],
+          "correctAnswer": "Facebook"
+        },
+        {
+          "question": "What are functions that begin with 'use' called?",
+          "answers": [
+            "Hooks",
+            "Functions",
+            "React",
+            "Spears"
+          ],
+          "correctAnswer": "Hooks"
+        },
+        {
+          "question": "What is the most common React hook?",
+          "answers": [
+            "useEffect",
+            "useReducer",
+            "useState",
+            "useCallback"
+          ],
+          "correctAnswer": "useState"
+        },
+        {
+          "question": "State can be passed down to a child component via...",
+          "answers": [
+            "Props",
+            "Love",
+            "Magic",
+            "React"
+          ],
+          "correctAnswer": "Props"
+        }
+      ]
+    },
+    {
+      "id": 906390703,
+      "name": "Aba",
+      "questions": [
+        {
+          "question": "What is Aba's name?",
+          "answers": [
+            "Ava",
+            "Aba",
+            "Not Aba",
+            "Abababa"
+          ],
+          "correctAnswer": "Aba"
+        },
+        {
+          "question": "How tall is Aba?",
+          "answers": [
+            "5ft",
+            "2ft",
+            "short",
+            "10ft"
+          ],
+          "correctAnswer": "short"
+        },
+        {
+          "question": "What is Aba's favorite drink?",
+          "answers": [
+            "Kool-aid",
+            "Beer",
+            "Coke",
+            "Dr. Pepper"
+          ],
+          "correctAnswer": "Dr. Pepper"
+        },
+        {
+          "question": "Where does Aba live?",
+          "answers": [
+            "The moon",
+            "Kansas",
+            "I don't Know",
+            "Royal Oak"
+          ],
+          "correctAnswer": "Royal Oak"
+        },
+        {
+          "question": "Which one would Aba choose?",
+          "answers": [
+            "Taco Bell",
+            "McDonalds",
+            "Burger King",
+            "KFC"
+          ],
+          "correctAnswer": "McDonalds"
+        },
+        {
+          "question": "Who does Aba Love most?",
+          "answers": [
+            "God",
+            "Grimace",
+            "Ian",
+            "Smiski"
+          ],
+          "correctAnswer": "Grimace"
+        }
+      ]
+    },
+    {
+      "id": 137684567,
+      "name": "TEST",
+      "questions": [
+        {
+          "question": "This is a test question",
+          "answers": [
+            "test",
+            "still testing",
+            "yes still a test",
+            "cmon now"
+          ],
+          "correctAnswer": "test"
+        }
+      ]
+    }
+  ]
+}

@@ -1,13 +1,14 @@
-import AllQuestions from "./AllQuestions";
 import { useState } from "react";
 import FinalScore from "./FinalScore";
 import Title from "./Title";
+import QuestionBox from "./QuestionBox";
+import Buttons from "./QuizButtons";
 
-export default function Quiz({ title, questions, setIsQuiz }) {
+export default function Quiz({ selectedQuiz }) {
+  const questions = selectedQuiz.questions;
   const answersArray = questions.map((q) => {
     return "";
   });
-
   const [answer, setAnswer] = useState(answersArray);
   const [finalScore, setFinalScore] = useState(0);
   const [questionNum, setQuestionNum] = useState(0);
@@ -18,7 +19,7 @@ export default function Quiz({ title, questions, setIsQuiz }) {
   }
 
   function updateAnswer(e) {
-    const value = e.target.attributes[1].value;
+    const value = e.target.textContent;
     setAnswer((a) => {
       return a.map((ans, i) => {
         if (i === Number(questionNum)) {
@@ -42,32 +43,38 @@ export default function Quiz({ title, questions, setIsQuiz }) {
     setFinalScore(0);
     setQuestionNum(0);
     setSubmit(false);
-    setIsQuiz("");
   }
 
   return (
     <div className="quiz">
-      <Title title={title} />
+      <Title title={selectedQuiz.name} />
       {submit ? (
         <FinalScore
           finalScore={finalScore}
           max={questions.length}
           resetQuiz={resetQuiz}
+          questions={questions}
+          answer={answer}
         />
       ) : (
-        <AllQuestions
-          questions={questions}
-          setFinalScore={setFinalScore}
-          questionNum={questionNum}
-          setQuestionNum={setQuestionNum}
-          answer={answer}
-          updateAnswer={updateAnswer}
-          submitReady={submitReady}
-        />
+        <>
+          <QuestionBox
+            questions={questions}
+            questionNum={questionNum}
+            answer={answer}
+            updateAnswer={updateAnswer}
+          />
+          <Buttons
+            questions={questions}
+            questionNum={questionNum}
+            setQuestionNum={setQuestionNum}
+            answer={answer}
+            setFinalScore={setFinalScore}
+            submitReady={submitReady}
+            returnHome={returnHome}
+          />
+        </>
       )}
-      <div className="homeButton" onClick={returnHome}>
-        <button>Home</button>
-      </div>
     </div>
   );
 }

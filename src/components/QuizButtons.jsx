@@ -1,3 +1,5 @@
+import StyledLink from "./StyledLink";
+
 export default function Buttons({
   questions,
   questionNum,
@@ -5,6 +7,7 @@ export default function Buttons({
   answer,
   setFinalScore,
   submitReady,
+  returnHome,
 }) {
   function handleNext() {
     if (questionNum < questions.length - 1) setQuestionNum((num) => num + 1);
@@ -34,6 +37,9 @@ export default function Buttons({
       >
         Previous
       </button>
+      <StyledLink to={"/"}>
+        <button onClick={returnHome}>Home</button>
+      </StyledLink>
       <button
         onClick={
           questions.length - 1 === questionNum ? handleSubmit : handleNext
