@@ -6,7 +6,12 @@ This project uses tools such as React, ReactRouter and json-server to create a C
 
 ## Instructions
 
-To run this application
+To run this application:
+
+* Clone a copy of the repository
+* In the project directory, run ## `npm i` to install the project dependencies
+* Run ## `npm run server` to start the local json server
+* In a new terminal, in the project directory, run ## `npm start` to start the application
 
 ## Available Scripts
 
