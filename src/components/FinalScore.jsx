@@ -2,6 +2,8 @@ import StyledLink from "./StyledLink";
 import { FaCheck } from "react-icons/fa";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 
+import "../styles/FinalScore.css";
+
 export default function FinalScore({
   finalScore,
   max,
@@ -20,9 +22,9 @@ export default function FinalScore({
       </div>
       <div className="resetButton">
         <button onClick={resetQuiz}>Retry</button>
-        <button>
-          <StyledLink to={"/"}>Home</StyledLink>
-        </button>
+        <StyledLink to={"/"}>
+          <button>Home</button>
+        </StyledLink>
       </div>
       <section className="results">
         <h2>Results</h2>

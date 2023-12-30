@@ -1,10 +1,12 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import NewQuestionForm from "./NewQuestionForm";
 import NewQuizPreview from "./NewQuizPreview";
-import { useNavigate } from "react-router-dom";
+import { useApp } from "../contexts/AppContext";
 
 export default function NewQuizForm({ questions, setQuestions }) {
   const [title, setTitle] = useState("");
+  const { dispatch } = useApp();
 
   const navigate = useNavigate();
 
@@ -20,7 +22,8 @@ export default function NewQuizForm({ questions, setQuestions }) {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(newQuiz),
     });
-    console.log(res);
+    const data = await res.json();
+    dispatch({ type: "addQuiz", payload: data });
     navigate("/");
   }
 
