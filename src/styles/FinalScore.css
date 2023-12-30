@@ -1,0 +1,51 @@
+.finalScore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  border: 10px outset var(--dark);
+  background-color: var(--darkish);
+  color: white;
+}
+
+.finalScore h3 {
+  margin: 0;
+}
+
+.finalScore h2 {
+  margin: 0;
+}
+
+.finalScore h1 {
+  font-size: 3rem;
+}
+
+.results {
+  color: black;
+  border: 5px solid var(--dark);
+  margin-bottom: 2rem;
+  background-color: var(--lightish);
+}
+
+.results h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.results > div {
+  border-top: 3px solid var(--dark);
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 10%;
+}
+
+.results div:first-of-type {
+  border-top: none;
+}
+
+.results span {
+  align-self: center;
+  justify-self: center;
+  font-size: 1.5rem;
+}
