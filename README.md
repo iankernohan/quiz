@@ -10,8 +10,8 @@ To run this application:
 
 * Clone a copy of the repository
 * In the project directory, run `npm i` to install the project dependencies
-* Run `npm run server` to start the local json server
-* In a new terminal, in the project directory, run `npm start` to start the application
+* Run `npm run server` to start the local json server on localhost:9000
+* In a new terminal, in the project directory, run `npm start` to start the application on localhost:3000
 
 ## Available Scripts
 
