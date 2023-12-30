@@ -1,8 +1,12 @@
 # Quisp
-##Description
+## Description
 
 Quisp is a simple study app that allows users to upload their own problem sets. The user can then study their problem sets by either taking a quiz or going through flashcards.
 This project uses tools such as React, ReactRouter and json-server to create a CRUD SPA.
+
+## Instructions
+
+To run this application
 
 ## Available Scripts
 
