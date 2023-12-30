@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useApp } from "../contexts/AppContext";
 import FinalScore from "../FinalScore";
-import Title from "../Title";
+import Title from "./Title";
 import QuestionBox from "./QuestionBox";
 import Buttons from "./QuizButtons";
 

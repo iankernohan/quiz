@@ -7,9 +7,10 @@ export default function Header({ children }) {
       <h1>
         <StyledLink to={"/"}>{children}</StyledLink>
       </h1>
-      <button>
-        <StyledLink to={"/newQuiz"}>+ New</StyledLink>
-      </button>
+
+      <StyledLink to={"/newQuiz"}>
+        <button>+ New</button>
+      </StyledLink>
     </div>
   );
 }

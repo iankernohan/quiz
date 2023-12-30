@@ -6,27 +6,52 @@
       "questions": [
         {
           "question": "What is 3 x 4?",
-          "answers": ["34", "12", "7", "1"],
+          "answers": [
+            "34",
+            "12",
+            "7",
+            "1"
+          ],
           "correctAnswer": "12"
         },
         {
           "question": "What is 5 x 0?",
-          "answers": ["0", "12", "7", "1"],
+          "answers": [
+            "0",
+            "12",
+            "7",
+            "1"
+          ],
           "correctAnswer": "0"
         },
         {
           "question": "What is 8 x 3?",
-          "answers": ["34", "12", "24", "1"],
+          "answers": [
+            "34",
+            "12",
+            "24",
+            "1"
+          ],
           "correctAnswer": "24"
         },
         {
           "question": "What is 10 x 100?",
-          "answers": ["34", "1000", "7", "1"],
+          "answers": [
+            "34",
+            "1000",
+            "7",
+            "1"
+          ],
           "correctAnswer": "1000"
         },
         {
           "question": "What is 6 x 7?",
-          "answers": ["34", "12", "7", "42"],
+          "answers": [
+            "34",
+            "12",
+            "7",
+            "42"
+          ],
           "correctAnswer": "42"
         }
       ]
@@ -37,27 +62,52 @@
       "questions": [
         {
           "question": "How many GreatLakes does Michigan have?",
-          "answers": ["5", "12", "7", "1"],
+          "answers": [
+            "5",
+            "12",
+            "7",
+            "1"
+          ],
           "correctAnswer": "5"
         },
         {
           "question": "What continent does Argentina belong to?",
-          "answers": ["South America", "North America", "Europe", "Asia"],
+          "answers": [
+            "South America",
+            "North America",
+            "Europe",
+            "Asia"
+          ],
           "correctAnswer": "South America"
         },
         {
           "question": "What ocean is the largest?",
-          "answers": ["Atlantic", "Indian", "Arctic", "Pacific"],
+          "answers": [
+            "Atlantic",
+            "Indian",
+            "Arctic",
+            "Pacific"
+          ],
           "correctAnswer": "Pacific"
         },
         {
           "question": "What is the name of the most previous Super Continent?",
-          "answers": ["Big Land", "Ontana", "Pangea", "Earth"],
+          "answers": [
+            "Big Land",
+            "Ontana",
+            "Pangea",
+            "Earth"
+          ],
           "correctAnswer": "Pangea"
         },
         {
           "question": "What is the name of the country Egypt?",
-          "answers": ["Egypt", "Not Egypt", "It has no name", "What is Egypt?"],
+          "answers": [
+            "Egypt",
+            "Not Egypt",
+            "It has no name",
+            "What is Egypt?"
+          ],
           "correctAnswer": "Egypt"
         }
       ]
@@ -68,75 +118,159 @@
       "questions": [
         {
           "question": "What are the building blocks of React?",
-          "answers": ["Elements", "Components", "Trees", "Blocks"],
+          "answers": [
+            "Elements",
+            "Components",
+            "Trees",
+            "Blocks"
+          ],
           "correctAnswer": "Components"
         },
         {
           "question": "Who invented React?",
-          "answers": ["Google", "Chrome", "Ian", "Facebook"],
+          "answers": [
+            "Google",
+            "Chrome",
+            "Ian",
+            "Facebook"
+          ],
           "correctAnswer": "Facebook"
         },
         {
           "question": "What are functions that begin with 'use' called?",
-          "answers": ["Hooks", "Functions", "React", "Spears"],
+          "answers": [
+            "Hooks",
+            "Functions",
+            "React",
+            "Spears"
+          ],
           "correctAnswer": "Hooks"
         },
         {
           "question": "What is the most common React hook?",
-          "answers": ["useEffect", "useReducer", "useState", "useCallback"],
+          "answers": [
+            "useEffect",
+            "useReducer",
+            "useState",
+            "useCallback"
+          ],
           "correctAnswer": "useState"
         },
         {
           "question": "State can be passed down to a child component via...",
-          "answers": ["Props", "Love", "Magic", "React"],
+          "answers": [
+            "Props",
+            "Love",
+            "Magic",
+            "React"
+          ],
           "correctAnswer": "Props"
         }
       ]
     },
     {
-      "id": 906390703,
-      "name": "Aba",
+      "id": 54891679,
+      "name": "History",
       "questions": [
         {
-          "question": "What is Aba's name?",
-          "answers": ["Ava", "Aba", "Not Aba", "Abababa"],
-          "correctAnswer": "Aba"
+          "question": "Who was the first president of the United States?",
+          "answers": [
+            "Abraham Lincoln",
+            "John Adams",
+            "George Washington",
+            "Chuck Norris"
+          ],
+          "correctAnswer": "George Washington"
         },
         {
-          "question": "How tall is Aba?",
-          "answers": ["5ft", "2ft", "short", "10ft"],
-          "correctAnswer": "short"
+          "question": "When was China first unified?",
+          "answers": [
+            "221 B.C.",
+            "336 B.C.",
+            "1125 A.D.",
+            "812 A.D."
+          ],
+          "correctAnswer": "221 B.C."
         },
         {
-          "question": "What is Aba's favorite drink?",
-          "answers": ["Kool-aid", "Beer", "Coke", "Dr. Pepper"],
-          "correctAnswer": "Dr. Pepper"
+          "question": "Who was the Greek God of War?",
+          "answers": [
+            "Apollo",
+            "Hermes",
+            "Athena",
+            "Ares"
+          ],
+          "correctAnswer": "Ares"
         },
         {
-          "question": "Where does Aba live?",
-          "answers": ["The moon", "Kansas", "I don't Know", "Royal Oak"],
-          "correctAnswer": "Royal Oak"
+          "question": "When did the first World War begin?",
+          "answers": [
+            "1921",
+            "1914",
+            "1883",
+            "1896"
+          ],
+          "correctAnswer": "1914"
         },
         {
-          "question": "Which one would Aba choose?",
-          "answers": ["Taco Bell", "McDonalds", "Burger King", "KFC"],
-          "correctAnswer": "McDonalds"
+          "question": "What is considered the first human technology?",
+          "answers": [
+            "The Wheel",
+            "Hammer",
+            "Fire",
+            "Computer"
+          ],
+          "correctAnswer": "Fire"
         },
         {
-          "question": "Who does Aba Love most?",
-          "answers": ["God", "Grimace", "Ian", "Smiski"],
-          "correctAnswer": "Grimace"
-        }
-      ]
-    },
-    {
-      "id": 137684567,
-      "name": "TEST",
-      "questions": [
+          "question": "How long ago did the Agricultural Revolution begin?",
+          "answers": [
+            "12,000 years",
+            "20,000 years",
+            "100,000 years",
+            "8,000 years"
+          ],
+          "correctAnswer": "12,000 years"
+        },
         {
-          "question": "This is a test question",
-          "answers": ["test", "still testing", "yes still a test", "cmon now"],
-          "correctAnswer": "test"
+          "question": "In which ocean did the Titanic sink?",
+          "answers": [
+            "Pacific",
+            "Arctic",
+            "Indian",
+            "Atlantic"
+          ],
+          "correctAnswer": "Atlantic"
+        },
+        {
+          "question": "Who delivered the famous “I Have a Dream” speech?",
+          "answers": [
+            "Malcolm X",
+            "Martin Luther King Jr.",
+            "Jordan Walke",
+            "Abraham Lincoln"
+          ],
+          "correctAnswer": "Martin Luther King Jr."
+        },
+        {
+          "question": "Where did Japanese Traditional Art originate?",
+          "answers": [
+            "The United States",
+            "China",
+            "France",
+            "Japan"
+          ],
+          "correctAnswer": "Japan"
+        },
+        {
+          "question": "Where did life first originate?",
+          "answers": [
+            "The Oceans",
+            "Mars",
+            "In the clouds",
+            "Ohio"
+          ],
+          "correctAnswer": "The Oceans"
         }
       ]
     }

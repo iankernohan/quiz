@@ -9,7 +9,7 @@ function FlashCards() {
 
   const [cardNumber, setCardNumber] = useState(0);
   const [showAnswer, setShowAnswer] = useState(false);
-  const [questions] = useState(selectedQuiz.questions);
+  const [questions, setQuestions] = useState(selectedQuiz.questions);
   const currentCard = questions[cardNumber];
 
   function shuffleQuestions() {
@@ -17,17 +17,14 @@ function FlashCards() {
     const newQuestions = [];
 
     for (let i = 0; i < questions.length; i++) {
-      const index = Math.floor(Math.random * oldQuestions.length);
+      const index = Math.floor(Math.random() * oldQuestions.length);
       const question = oldQuestions.splice(index, 1);
       newQuestions.push(question[0]);
-      console.log(question);
     }
-
-    console.log(oldQuestions);
-    console.log(newQuestions);
+    setQuestions(newQuestions);
   }
 
-  function handleClick(e) {
+  function handleClick() {
     setShowAnswer((prev) => !prev);
   }
 
